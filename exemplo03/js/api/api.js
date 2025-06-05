@@ -1,4 +1,4 @@
-const url = "https://01c72ea2-dc83-4f76-b4e6-f998346028e2-00-1fmk7t8gu8uk4.picard.replit.dev/";
+const url = "https://729eca6f-d122-48f3-9d63-bfb6f952340d-00-2ug93xivbks4.worf.replit.dev/";
 const urlProdutos = url + "produtos";
 
 /*
@@ -26,6 +26,18 @@ export async function enviar(dados) {
     }
 
     return await resposta.json();
+  } catch (erro) {
+    console.error('Erro ao enviar dados:', erro);
+    throw erro;
+  }
+}
+
+export async function deletar(dados) {
+  try {
+    const resposta = await fetch(urlProdutos, {
+      method: 'DELETE',
+      
+    })
   } catch (erro) {
     console.error('Erro ao enviar dados:', erro);
     throw erro;
