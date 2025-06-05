@@ -18,7 +18,9 @@ function imprimir(json){
   return `<div class="id">ID: ${json.id}</div> 
           <div class="nome">Produto: ${json.produto}</div> 
           <div class="nascimento">Preço: ${json.preco}</div>
-          <div>Validade: ${json.validade}</div>`
+          <div>Validade: ${json.validade}</div>
+          <button ></button>
+          `
 }
 
 export default imprimir;

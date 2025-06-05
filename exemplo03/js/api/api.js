@@ -35,8 +35,7 @@ export async function enviar(dados) {
 export async function deletar(dados) {
   try {
     const resposta = await fetch(urlProdutos, {
-      method: 'DELETE',
-      
+      method: 'DELETE'
     })
   } catch (erro) {
     console.error('Erro ao enviar dados:', erro);
